@@ -7,11 +7,11 @@ import NearMeIcon from "@material-ui/icons/NearMe";
 import ExpandMoreIcon from "@material-ui/icons/ExpandMore";
 import AccountCircleIcon from "@material-ui/icons/AccountCircle";
 
-function Post({ propfilePic, image, username, timestamp, message }) {
+function Post({ profilePic, image, username, timestamp, message }) {
   return (
     <div className="post">
       <div className="post__top">
-        <Avatar src={propfilePic} className="post__avatar" />
+        <Avatar src={profilePic} className="post__avatar" />
         <div className="post__topinfo">
           <h3>{username}</h3>
           <p>{new Date(timestamp?.toDate()).toLocaleString("ko")}</p>

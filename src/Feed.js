@@ -24,7 +24,7 @@ function Feed() {
       <MessageSender />
       {posts.map((post) => (
         <Post
-          propfilePic={post.data.propfilePic}
+          profilePic={post.data.profilePic}
           message={post.data.message}
           timestamp={post.data.timestamp}
           username={post.data.username}
